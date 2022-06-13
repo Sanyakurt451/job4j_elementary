@@ -18,6 +18,7 @@
     <!--   <property name="headerFile" value="${checkstyle.header.file}"/> -->
     <!--   <property name="fileExtensions" value="java"/> -->
     <!-- </module> -->
+
     <module name="TreeWalker">
 
         <module name="EmptyLineSeparator"> <!-- Java Style Guide: Source file structure -->
