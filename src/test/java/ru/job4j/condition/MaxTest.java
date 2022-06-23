@@ -24,9 +24,19 @@ public class MaxTest {
     }
 
     @Test
-    public void whenMax1To2ThenLess() {
+    public void whenMax10To2ThenLess() {
         int left = 10;
         int right = 2;
+        String result = Max.max(left, right);
+        String expected = "More";
+        Assert.assertEquals(result, expected);
+
+    }
+
+    @Test
+    public void whenMax10To7ThenLess() {
+        int left = 10;
+        int right = 7;
         String result = Max.max(left, right);
         String expected = "More";
         Assert.assertEquals(result, expected);
