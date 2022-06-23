@@ -2,7 +2,6 @@ package ru.job4j.condition;
 
 import org.junit.Assert;
 import org.junit.Test;
-
 public class DummyBotTest {
     @Test
     public void whenGreetBot() {
@@ -27,4 +26,5 @@ public class DummyBotTest {
         String expected = "Ёто ставит мен€ в тупик. «адайте другой вопрос.";
         Assert.assertEquals(expected, result);
     }
+
 }
