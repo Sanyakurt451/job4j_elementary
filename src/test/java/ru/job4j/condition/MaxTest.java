@@ -30,6 +30,5 @@ public class MaxTest {
         String result = Max.max(left, right);
         String expected = "More";
         Assert.assertEquals(result, expected);
-
     }
 }
