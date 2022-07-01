@@ -1,6 +1,5 @@
 package ru.job4j.condition;
 
-
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -9,7 +8,7 @@ public class DivideBySixTest {
     public void whenNumberDivideBy6() {
         int in = 24;
         String result = DivideBySix.checkNumber(in);
-        String expected = "Исходное число делится на 6.";
+        String expected = "РСЃС…РѕРґРЅРѕРµ С‡РёСЃР»Рѕ РґРµР»РёС‚СЃСЏ РЅР° 6.";
         Assert.assertEquals(expected, result);
     }
 
@@ -17,7 +16,7 @@ public class DivideBySixTest {
     public void whenNumberDivideBy3AndNotEven() {
         int in = 9;
         String result = DivideBySix.checkNumber(in);
-        String expected = "Исходное число делится на 3, но не является четным.";
+        String expected = "РСЃС…РѕРґРЅРѕРµ С‡РёСЃР»Рѕ РґРµР»РёС‚СЃСЏ РЅР° 3, РЅРѕ РЅРµ СЏРІР»СЏРµС‚СЃСЏ С‡РµС‚РЅС‹Рј.";
         Assert.assertEquals(expected, result);
     }
 
@@ -25,7 +24,7 @@ public class DivideBySixTest {
     public void whenNumberNoDivideBy3AndEven() {
         int in = 14;
         String result = DivideBySix.checkNumber(in);
-        String expected = "Исходное число не делится на 3, но является четным.";
+        String expected = "РСЃС…РѕРґРЅРѕРµ С‡РёСЃР»Рѕ РЅРµ РґРµР»РёС‚СЃСЏ РЅР° 3, РЅРѕ СЏРІР»СЏРµС‚СЃСЏ С‡РµС‚РЅС‹Рј.";
         Assert.assertEquals(expected, result);
     }
 
@@ -33,7 +32,7 @@ public class DivideBySixTest {
     public void whenNumberNoDivideBy3AndNotEven() {
         int in = 25;
         String result = DivideBySix.checkNumber(in);
-        String expected = "Исходное число не делится на 3 и не является четным.";
+        String expected = "РСЃС…РѕРґРЅРѕРµ С‡РёСЃР»Рѕ РЅРµ РґРµР»РёС‚СЃСЏ РЅР° 3 Рё РЅРµ СЏРІР»СЏРµС‚СЃСЏ С‡РµС‚РЅС‹Рј.";
         Assert.assertEquals(expected, result);
     }
 }
