@@ -9,6 +9,16 @@ public class Counter {
         return sum;
     }
 
+    public static int sumByEven(int start, int finish) {
+        int sum = 0;
+        for (int in = start; in <= finish; in++) {
+            if (in % 2 == 0) {
+                sum += in;
+            }
+        }
+        return sum;
+    }
+
     public static void main(String[] args) {
         System.out.println(sum(0, 10));
         System.out.println(sum(3, 8));
