@@ -3,8 +3,8 @@ package ru.job4j.condition;
 public class Counter {
     public static int sum(int start, int finish) {
         int sum = 0;
-        for (start = 0; finish <= 5; finish++) {
-            sum = sum + finish;
+        for (int in = start; in <= finish; in++) {
+            sum += in;
         }
         return sum;
     }
@@ -15,4 +15,3 @@ public class Counter {
         System.out.println(sum(1, 1));
     }
 }
-
