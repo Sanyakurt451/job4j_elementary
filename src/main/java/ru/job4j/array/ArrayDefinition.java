@@ -1,4 +1,4 @@
-package array;
+package ru.job4j.array;
 
 public class ArrayDefinition {
     public static void main(String[] args) {
@@ -17,6 +17,6 @@ public class ArrayDefinition {
         System.out.println(names[2]);
          names[3] = "John Brown";
         System.out.println(names[3]);
-
+        }
     }
-}
+
