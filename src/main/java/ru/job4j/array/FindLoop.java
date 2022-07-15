@@ -14,10 +14,12 @@ public class FindLoop {
 
     public static int indexInRange(int[] data, int el, int start, int finish) {
         int rst = -1;
-        for (int index = 0; index < finish; index++) {
-           el = data[start] - data[finish] - index;
-           rst = el;
+        for (int index = start; index <= finish; index++) {
+            if (data[index] == el) {
+                rst = index;
+                break;
             }
+        }
         return rst;
     }
 }

@@ -38,9 +38,9 @@ public class FindLoopTest {
     }
 
     @Test
-    public void whenDiapasonHas1Then1() {
-        int[] data = new int[]{6, 8, 3, 6, 4, 6};
-        int el = 1;
+    public void whenDiapasonHas2Then1() {
+        int[] data = new int[]{9, 2, 6, 2, 8};
+        int el = 2;
         int start = 1;
         int finish = 4;
         int result = FindLoop.indexInRange(data, el, start, finish);
