@@ -15,6 +15,17 @@ public class MaxTest {
     }
 
     @Test
+    public void whenMax1To2To3To4Then4() {
+        int left = 1;
+        int right = 2;
+        int leftright = 3;
+        int rightleft = 4;
+        int result = Max.max(left, right, leftright, rightleft);
+        int expected = 4;
+        Assert.assertEquals(result, expected);
+    }
+
+    @Test
     public void whenMax4To4Then4() {
         int left = 4;
         int right = 4;
